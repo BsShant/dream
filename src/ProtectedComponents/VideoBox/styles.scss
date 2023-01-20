@@ -1,0 +1,43 @@
+.video-box {
+  flex-basis: 20%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 150px;
+  cursor: pointer;
+  border: 1px solid var(--brand-color-1);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-right: 5%;
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+  }
+  .video-line {
+    height: 4px;
+    background-color: var(--brand-color-1);
+    border-radius: 5px;
+    width: 90%;
+    bottom: 10px;
+    position: absolute;
+  }
+  .video-play {
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--brand-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

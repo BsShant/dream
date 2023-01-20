@@ -1,0 +1,27 @@
+.download-box {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 30px 20px;
+  font-size: 14px;
+  font-family: var(--roboto);
+  border-bottom: 1px solid grey;
+  .download-title {
+    color: var(--brand-color-1);
+    display: block;
+    font-size: 16px;
+  }
+  .download-icon {
+    color: var(--brand-color-1);
+    display: block;
+  }
+  .download-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .download-button {
+  }
+}

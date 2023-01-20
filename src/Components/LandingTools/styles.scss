@@ -1,0 +1,36 @@
+.landing-tools-container {
+    padding: 80px 0;
+
+    .landing-tools-header {
+        text-align: center;
+    }
+    .landing-tools-sub-header {
+        text-align: center;
+    }
+}
+
+.landing-offer-tools {
+  display: flex;
+  margin-top: 50px;
+  .st-box {
+    flex-basis: 23%;
+    box-shadow: 1px 1px 9px -1px #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    &:not(:last-child) {
+      margin-right: 3%;
+    }
+    .st-icon {
+      margin-right: 8px;
+    }
+    .st-info {
+      .st-title {
+        font-size: 15px;
+      }
+      .st-detail {
+        font-size: 14px;
+      }
+    }
+  }
+}

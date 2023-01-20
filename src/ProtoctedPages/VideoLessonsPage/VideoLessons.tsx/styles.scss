@@ -1,0 +1,21 @@
+.video-lessons-container {
+  width: 100%;
+  .video-lessons-inner {
+    .private-section-header {
+      margin-bottom: 20px;
+    }
+    .video-lesson-section {
+      margin-bottom: 30px;
+      .video-lessons-heading {
+        margin-bottom: 10px;
+        font-family: var(--roboto);
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .video-lessons-boxes {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

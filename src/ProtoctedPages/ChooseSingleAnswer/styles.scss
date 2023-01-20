@@ -1,0 +1,57 @@
+.choose-single-container {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+  font-family: var(--roboto);
+  .choose-single-box {
+    display: flex;
+    .choose-single-left {
+      flex-basis: 40%;
+      margin-right: 5%;
+      flex-grow: 1;
+    }
+    .choose-single-right {
+      flex-basis: 40%;
+      flex-grow: 1;
+      .practice-header {
+      }
+      .choose-single-right-sub-heading {
+        margin-bottom: 30px;
+      }
+      .choose-single-check-boxes {
+        display: flex;
+        flex-direction: column;
+        .check-box-container {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          .check-round {
+            height: 13px;
+            width: 13px;
+            margin-right: 10px;
+            background-color: var(--brand-color-1);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .check-mark {
+              color: #fff;
+              font-size: 15px;
+            }
+          }
+          .ckeck-name {
+          }
+        }
+      }
+    }
+  }
+  .choose-single-footer {
+    display: flex;
+    justify-content: flex-end;
+    .alternate-button {
+      margin-right: 20px;
+    }
+  }
+}

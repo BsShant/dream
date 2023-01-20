@@ -1,0 +1,52 @@
+.re-tell-container {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+  font-family: var(--roboto);
+  width: 100%;
+  .re-tell-box {
+    .practice-header {
+    }
+    .re-tell-image-body {
+      display: flex;
+      justify-content: center;
+      .re-tell-image-image {
+        flex-basis: 40%;
+        height: 300px;
+        margin-top: 25px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+      .audio-box {
+        align-self: center;
+        margin: 0!important;
+        .re-tell-sound-status {
+          margin-bottom: 4px;
+        }
+        .re-tell-status-text {
+        }
+        .re-tell-progress-box {
+          margin-top: 30px;
+          .status-progress {
+            .status-progress-inner {
+            }
+          }
+        }
+      }
+    }
+  }
+  .re-tell-footer {
+    display: flex;
+    justify-content: flex-end;
+    .alternate-button {
+      margin-right: 20px;
+    }
+  }
+}

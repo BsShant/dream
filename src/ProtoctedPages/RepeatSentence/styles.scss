@@ -1,0 +1,21 @@
+.repeat-sentence-container {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+  font-family: var(--roboto);
+  width: 100%;
+  .repeat-sentence-box {
+    .repeat-sentence-heading {
+      margin-bottom: 50px;
+    }
+  }
+  .repeat-sentence-footer {
+    display: flex;
+    justify-content: flex-end;
+    .alternate-button {
+      margin-right: 20px;
+    }
+  }
+}

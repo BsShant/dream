@@ -1,0 +1,142 @@
+.landing-hero-container {
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: rgba(19, 102, 176, 0.05);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    // background-image: url("https://template.coomb.co/erudite/wp-content/uploads/sites/10/2020/12/Flexi-BG3.png");
+  }
+  .hero-container {
+    height: 100%;
+    .landing-hero-text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      .landing-hero-top-title {
+        font-weight: 700;
+        font-size: 14px;
+        color: #000;
+        text-transform: uppercase;
+      }
+      .landing-hero-header {
+        font-size: 60px;
+        line-height: 66px;
+        letter-spacing: 0.5px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        color: var(--brand-color-1);
+      }
+      .landing-hero-detail {
+        margin-bottom: 25px;
+      }
+      .landing-hero-button {
+        button {
+          width: 168px;
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+  .landing-hero-image-container {
+    height: 100%;
+    position: relative;
+    .landing-hero-image {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      z-index: 2;
+      img {
+        height: 90%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.landing-small-eclipse {
+  /* Ellipse 2 */
+
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  left: 354px;
+  top: 430px;
+  border-radius: 50%;
+
+  background: rgba(19, 102, 176, 0.13);
+  animation-name: volvo;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.landing-big-eclipse {
+  /* Ellipse 1 */
+
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: calc(50% - 200px);
+  top: 5px;
+  border-radius: 50%;
+  background: rgba(19, 102, 176, 0.13);
+  animation-name: volvo;
+
+  animation-name: volvo;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.landing-smallest-eclipse {
+  /* Ellipse 3 */
+
+  position: absolute;
+  width: 91px;
+  height: 91px;
+  left: 58%;
+  top: 69px;
+  border-radius: 50%;
+
+  background: rgba(19, 102, 176, 0.13);
+  animation-name: volvo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes volvo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

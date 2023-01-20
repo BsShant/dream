@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "aos/dist/aos.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import Aos from "aos";
+// import "@ant - design/flowchart/dist/index.css";
+import { useEffect } from "react";
+import IndexRoutes from './Routes/IndexRoutes';
+import LayoutProvider from './Context/LayoutContext';
+// import "antd/dist/antd.css";
 
 function App() {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <LayoutProvider>
+
+        <IndexRoutes />
+      </LayoutProvider>
     </div>
   );
 }
+
 
 export default App;

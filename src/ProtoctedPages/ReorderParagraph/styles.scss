@@ -1,0 +1,91 @@
+.reorder-paragraph-container {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+  font-family: var(--roboto);
+  .reorder-box {
+    .re-order-heading {
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .re-order-body {
+      display: flex;
+      .re-order-left {
+        flex-basis: 40%;
+        flex-grow: 1;
+        margin-right: 5%;
+        border-radius: 20px;
+      }
+      .re-order-sub-heading {
+        text-align: center;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        color: grey;
+      }
+      .disrupted-boxes {
+        padding: 20px;
+        border: 1px solid var(--brand-color-1);
+        min-height: 350px;
+        border-radius: 20px;
+      }
+      .disrupted-para {
+        padding: 10px 15px;
+        // box-shadow: 1px 1px 1px 1px grey;
+        margin-bottom: 30px;
+        background-color: white;
+        transition: all 500ms ease;
+        border-radius: 20px;
+        background-color: #f0f0f0;
+        font-size: 14px;
+        width: 100%;
+      }
+      .managed-boxes {
+        border: 1px solid var(--brand-color-1);
+        min-height: 350px;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+
+        .drop-text {
+          position: absolute;
+          z-index: -1;
+          font-size: 24px;
+          color: grey;
+          opacity: 0.5;
+        }
+      }
+      .hold {
+        border: 1px solid red;
+      }
+      .hovered {
+        border: 1px solid red;
+        border-style: dashed;
+      }
+      .invisible {
+        display: none;
+      }
+
+      .re-order-right {
+        flex-basis: 40%;
+        flex-grow: 1;
+      }
+    }
+  }
+  .reorder-footer {
+    display: flex;
+    justify-content: flex-end;
+    .alternate-button {
+      margin-right: 20px;
+    }
+  }
+}
+
+[draggable="true"] {
+  cursor: move;
+}

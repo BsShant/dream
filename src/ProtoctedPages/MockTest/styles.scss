@@ -1,0 +1,11 @@
+.mock-test-container {
+  .mock-test-inner {
+      .private-section-header {
+        margin-bottom: 30px;
+      }
+      .mock-test-boxes {
+        display: flex;
+        flex-wrap: wrap;
+      }
+  }
+}

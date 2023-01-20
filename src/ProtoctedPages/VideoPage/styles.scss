@@ -1,0 +1,117 @@
+.video-page-container {
+  width: 100%;
+  .video-page-inner {
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%;
+  }
+  .video-page-left {
+    height: 100%;
+    overflow: hidden;
+    flex-basis: 70%;
+    margin-right: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    .big-video-name {
+      font-size: 18px;
+      font-family: var(--roboto);
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    .author-container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      .author-image {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 15px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .author-infos {
+        .author-name {
+          font-size: 14px;
+        }
+        .author-role {
+          font-size: 13px;
+          color: grey;
+        }
+      }
+    }
+    .video-desc {
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    .big-player-container {
+      height: 340px;
+      width: 100%;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .video-box {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        #video-controls {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          #play-pause {
+            background-color: var(--brand-color-1);
+            border: 1px solid var(--brand-color-1);
+            height: 35px;
+            width: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+  .video-page-right {
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100%;
+    padding: 0 8px;
+    overflow-y: scroll;
+    .video-page-header {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-family: var(--roboto);
+    }
+    .small-videos {
+      .small-player {
+        height: 130px;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

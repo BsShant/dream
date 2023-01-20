@@ -1,0 +1,68 @@
+.landing-price-container {
+  color: #fff;
+  padding: 70px 0;
+  .landing-pricing-header {
+    text-align: center;
+  }
+  .landing-pricing-sub-header {
+    text-align: center;
+  }
+  .pricing-boxes-container {
+    display: flex;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .pricing-box {
+      flex-basis: 30%;
+      text-align: center;
+      padding: 25px 15px;
+      border-radius: 15px;
+      &:not(:last-child) {
+        margin-right: 4%;
+      }
+      &:nth-child(2) {
+        // padding: 40px 15px;
+        transform: scale(1.1);
+      }
+      .pricing-header {
+        font-size: 22px;
+      }
+      .pricing-sub-header {
+        font-size: 16px;
+      }
+      .pricing-price {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .pricing-detail {
+        text-align: left;
+        margin-bottom: 30px;
+        text-align: center;
+        .pricing-item {
+          margin-bottom: 8px;
+        }
+        .pricing-icon {
+          color: #fff;
+          margin-right: 8px;
+        }
+      }
+      .pricing-button {
+        display: flex;
+        justify-content: center;
+        button {
+          width: 63%;
+          border: none;
+          border: 1px solid #fff;
+          &:hover {
+            background: transparent;
+            color: #fff;
+
+            border: 1px solid #fff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

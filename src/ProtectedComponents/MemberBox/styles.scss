@@ -1,0 +1,38 @@
+.member-box {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 12px 12px;
+  &:not(:last-child) {
+    border-bottom: 1px solid #cccccc75;
+  }
+  .member-image {
+    flex-basis: 10%;
+    margin-right: 2%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+  }
+  .member-info {
+    flex-basis: 60%;
+    margin-right: 5%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    .member-name {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .member-role {
+        font-size: 12px;
+    }
+  }
+  .box-dot {
+    flex-basis: 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}

@@ -1,0 +1,32 @@
+.summarize-spoken-text-container {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+  font-family: var(--roboto);
+
+  .summarize-spoken-text-box {
+    .practice-header {
+    }
+    .audio-box {
+      margin-bottom: 30px;
+      .summarize-spoken-status {
+      }
+      .summarize-status-text {
+      }
+    }
+    .summarize-spoken-text-box {
+      margin-bottom: 20px;
+      textarea {
+      }
+    }
+  }
+  .summarize-spoken-text-footer {
+    display: flex;
+    justify-content: flex-end;
+    .alternate-button {
+      margin-right: 20px;
+    }
+  }
+}

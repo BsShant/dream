@@ -1,0 +1,37 @@
+.listening-fib-container {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+  font-family: var(--roboto);
+  .listening-fib-box {
+    .practice-header {
+       
+    }
+    .audio-box {
+      .status-heading {
+      }
+      .status-text {
+      }
+    }
+    .fib-texts {
+      line-height: 2.1;
+      
+      input {
+        padding: 12px 12px;
+        font-size: 14px;
+        width: 140px;
+        height: 27px;
+        font-size: 14px;
+        border-radius: 10px;
+        border: 1px solid var(--brand-color-1);
+
+        &:focus-visible{
+          border: 1px solid var(--brand-color-1);
+          outline: transparent;
+        }
+      }
+    }
+  }
+}

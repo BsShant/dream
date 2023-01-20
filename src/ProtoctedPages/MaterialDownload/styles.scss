@@ -1,0 +1,23 @@
+.material-download-container {
+  width: 100%;
+  .material-download-inner {
+    width: 60%;
+  }
+  .private-section-header {
+    margin-bottom: 20px;
+  }
+  .material-download-section {
+    margin-bottom: 30px;
+
+    .material-download-heading {
+      margin-bottom: 10px;
+      font-family: var(--roboto);
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .material-download-boxes {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

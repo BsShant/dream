@@ -1,0 +1,50 @@
+.read-aloud-container {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+  .read-aloud-header {
+    .read-aloud-header-left {
+    }
+    .read-aloud-header-right {
+    }
+  }
+  .read-aloud-body {
+    .read-aloud-box {
+      .read-aloud-heading {
+        margin-bottom: 30px;
+        font-family: var(--roboto);
+        font-weight: 500;
+      }
+      .audio-box {
+        .status-time {
+        }
+        .completed-mark {
+        }
+        .status-heading {
+          .status-text {
+          }
+        }
+        .audio-react-recorder {
+          height: 100px;
+          width: 100%;
+        }
+        .audio-react-recorder__canvas {
+          // height: 100%;
+          // width: 100%;
+        }
+      }
+      .read-aloud-statement {
+        font-family: var(--roboto);
+      }
+    }
+  }
+  .read-aloud-footer {
+    display: flex;
+    justify-content: flex-end;
+    .alternate-button {
+      margin-right: 20px;
+    }
+  }
+}
